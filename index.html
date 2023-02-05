@@ -1,12 +1,81 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Speack</title>
-	</head>
-	<body>
-		
-	</body>
-	</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Speack</title>
+</head>
+
+<body>
+	<div class="top center">
+		<header class="top__header header">
+			<a class="header__logo" href="index.html">
+				<img class="header__logo-img" src="./img/Logo/logo.svg" alt="Logo">
+			</a>
+			<nav class="header__nav">
+				<a href="#" class="header__nav-link">About us</a>
+				<a href="#" class="header__nav-link">Blog</a>
+				<a href="#" class="header__nav-link">Contact</a>
+			</nav>
+			<div class="header__btns btns">
+				<div class="btns__dropbtn dropbtn">
+					<div class="dropbtn">EN</div>
+					<div class="dropbtn__content">
+						<a href="#">EN</a>
+						<a href="#">Ru</a>
+					</div>
+				</div>
+				<a class="btns__login" href="#">Войти</a>
+			</div>
+		</header>
+		<section class="top__banner banner">
+			<div class="banner__info">
+				<div class="banner__overhead">+300 прошедших отбор психологов</div>
+				<h1 class="banner__title">Сессии с психологом Онлайн</h1>
+				<a class="banner__link" href="#">Начать беседу</a>
+			</div>
+			<div class="banner__img">
+				<img src="./img/Banner/Banner.png" alt="Banner">
+			</div>
+		</section>
+		<section class="top__product product">
+			<div class="product__video">
+				<video autoplay>
+					<source controls src="/videos/forest.webm" type="video/mp4">
+					<source src="/videos/forest.mp4" type="video/ogg">
+				</video>
+			</div>
+			<div class="product__app app">
+				<div class="app__title">Скачайте бесплатно приложение SPEAK</div>
+				<div class="app__content">
+					<div class="app__logo">
+						<img src="./img/App/logo.svg" alt="Logo">
+					</div>
+					<div class="app__description">
+						<h2 class="app__name">Speak</h2>
+						<p class="app__text">онлайн сессии с психологом</p>
+						<p class="app__text">доступно для iOS и Android</p>
+					</div>
+					<div class="app__images">
+						<div class="app__image">
+							<img src="./img/App/appstore.jpg" alt=appstore">
+						</div>
+						<div class="app__image">
+							<img src="./img/App/playstore.png" alt="playstore">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

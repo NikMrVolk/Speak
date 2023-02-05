@@ -1,0 +1,193 @@
+@import "null";
+
+%flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+$title-color: #0E0E0F;
+$text-color: #333333;
+$text-color-active: #00B9B6;
+$card-text: #FFFFFF;
+$other-text: #AFAFAF;
+
+@mixin text-styles ($fsz, $lh, $fw, $color) {
+	font-size: $fsz;
+	line-height: $lh;
+	font-weight: $fw;
+	color: $color;
+}
+
+@mixin text-styles-title ($fsz, $lh, $fw, $color, $ta, $m) {
+	font-size: $fsz;
+	line-height: $lh;
+	font-weight: $fw;
+	color: $color;
+	text-align: $ta;
+	margin: $m;
+}
+
+html{
+	font-size: 4px;
+	// 1rem == 4px
+}
+
+body{
+	font-family: 'Inter', sans-serif;
+	background: #F9FDFF;
+}
+
+.center{
+	padding: 0 calc(50% - 1120px / 2);
+}
+
+.top {
+	&__header {
+		margin-bottom: 82px;
+	}
+	&__banner{
+		margin-bottom: 140px;
+	}
+	&__product {
+		margin-bottom: 140px;
+	}
+}
+
+.header {
+	height: 94px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__logo {
+		width: 183px;
+	}
+	&__nav {
+		@extend %flex-center;
+		gap: 40px;
+	}
+
+	&__nav-link {
+		@include text-styles(4.5rem, 120%, 500, $text-color);
+	}
+
+	&__btns {
+		@extend %flex-center;
+		gap: 20px;
+	}
+
+}
+
+.btns {
+	&__dropbtn {
+		padding: 7px 0;
+		padding-right: 40px;
+		cursor: pointer;
+		background: url('../img/Header/flags.svg') no-repeat left center;
+		padding-left: 32px;
+		width: 40px;
+		&::after{
+			background: rgba(0, 0, 0, 0) url("../img/Header/icon.svg") no-repeat scroll center center;
+			content: "";
+			height: 16px;
+			position: absolute;
+			right: 0;
+			top: 6px;
+			width: 16px;
+		}
+	}
+
+	&__login {
+		width: 109px;
+		height: 44px;
+		background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+		box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+		border-radius: 12px;
+		@extend %flex-center;
+		@include text-styles(4rem, 120%, 700, $card-text)
+	}
+}
+
+.dropbtn {
+	position: relative;
+	display: inline-block;
+	&__content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		width: 140px;
+		& a:first-child{
+			background: url('./img/Header/flags.svg') no-repeat left center;
+		}
+		& a:last-child{
+			background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+		}
+	}
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	&__info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__overhead {
+		@include text-styles(4.5rem, 140%, 400, $text-color-active);
+	}
+
+	&__title {
+		@include text-styles-title(12rem, 120%, 700, $title-color, start, 0 0 50px 0);
+	}
+
+	&__link {
+		height: 48px;
+		width: 196px;
+		background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+		box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+		border-radius: 12px;
+		@extend %flex-center;
+		@include text-styles(4.5rem, 120%, 700, $card-text)
+	}
+
+	&__img img{
+		margin-right: -20px;
+	}
+}
+
+.product {
+
+	&__video {
+
+	}
+
+	&__app {
+	}
+}
+.app {
+
+	&__title {
+	}
+
+	&__content {
+	}
+
+	&__logo {
+	}
+
+	&__description {
+	}
+
+	&__name {
+	}
+
+	&__text {
+	}
+
+	&__images {
+	}
+
+	&__image {
+	}
+}

@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.banner__link, .btns__login, .header__btns, .header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  font-size: 4px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #F9FDFF;
+}
+
+.center {
+  padding: 0 calc(50% - 560px);
+}
+
+.top__header {
+  margin-bottom: 82px;
+}
+.top__banner {
+  margin-bottom: 140px;
+}
+.top__product {
+  margin-bottom: 140px;
+}
+
+.header {
+  height: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 183px;
+}
+.header__nav {
+  gap: 40px;
+}
+.header__nav-link {
+  font-size: 4.5rem;
+  line-height: 120%;
+  font-weight: 500;
+  color: #333333;
+}
+.header__btns {
+  gap: 20px;
+}
+
+.btns__dropbtn {
+  padding: 7px 0;
+  padding-right: 40px;
+  cursor: pointer;
+  background: url("../img/Header/flags.svg") no-repeat left center;
+  padding-left: 32px;
+  width: 40px;
+}
+.btns__dropbtn::after {
+  background: rgba(0, 0, 0, 0) url("../img/Header/icon.svg") no-repeat scroll center center;
+  content: "";
+  height: 16px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  width: 16px;
+}
+.btns__login {
+  width: 109px;
+  height: 44px;
+  background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+  box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+  border-radius: 12px;
+  font-size: 4rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.dropbtn {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 140px;
+}
+.dropbtn__content a:first-child {
+  background: url("./img/Header/flags.svg") no-repeat left center;
+}
+.dropbtn__content a:last-child {
+  background: url("http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png") no-repeat left center;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.banner__info {
+  display: flex;
+  flex-direction: column;
+}
+.banner__overhead {
+  font-size: 4.5rem;
+  line-height: 140%;
+  font-weight: 400;
+  color: #00B9B6;
+}
+.banner__title {
+  font-size: 12rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #0E0E0F;
+  text-align: start;
+  margin: 0 0 50px 0;
+}
+.banner__link {
+  height: 48px;
+  width: 196px;
+  background: linear-gradient(225deg, #00B9B6 0%, #00CDAC 100%);
+  box-shadow: 0px 15px 30px rgba(220, 232, 243, 0.25);
+  border-radius: 12px;
+  font-size: 4.5rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.banner__img img {
+  margin-right: -20px;
+}
