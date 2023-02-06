@@ -157,37 +157,48 @@ body{
 }
 
 .product {
-
-	&__video {
-
-	}
-
-	&__app {
+	display: flex;
+	gap: 50px;
+	&__video iframe {
+		width: 615px;
+		height: 342px;
+		border-radius: 24px;
 	}
 }
 .app {
+	display: flex;
+	flex-direction: column;
 
 	&__title {
+		@include text-styles-title(8rem, 120%, 700, $title-color, start, 14px 0 37px 0);
 	}
-
 	&__content {
+		display: flex;
+		gap: 33px;
 	}
 
 	&__logo {
+		width: 90px;
+		height: 90px;
+		& img {
+			width: 100%;
+		}
 	}
-
 	&__description {
+		margin-bottom: 72px;
 	}
-
 	&__name {
+		@include text-styles-title(6rem, 140%, 600, $text-color-active, start, 0 0 5px 0);
 	}
-
 	&__text {
+		@include text-styles(4rem, 140%, 400, $text-color);
+		margin-bottom: 5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
-
 	&__images {
-	}
-
-	&__image {
+		display: flex;
+		gap: 20px;
 	}
 }
