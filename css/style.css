@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.speakers__nav, .banner__link, .btns__login, .header__btns, .header__nav {
+.speakers-item__stars, .speakers__btns, .speakers__nav, .banner__link, .btns__login, .header__btns, .header__nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,6 +265,9 @@ body {
   gap: 20px;
 }
 
+.speakers {
+  margin-bottom: 158px;
+}
 .speakers__top {
   margin: 0 0 50px 0;
 }
@@ -301,6 +304,39 @@ body {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
 }
+.speakers__wrapper {
+  display: flex;
+  gap: 0px;
+  margin-bottom: 40px;
+}
+.speakers__btns {
+  gap: 15px;
+}
+.speakers__btn {
+  width: 20px;
+  height: 6px;
+}
+.speakers__btn input[type=radio] {
+  display: none;
+}
+.speakers__btn label {
+  width: 15px;
+  height: 6px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: none;
+  background: rgba(0, 185, 182, 0.25);
+}
+.speakers__btn input[type=radio]:checked + label {
+  background: #00B9B6;
+}
+
 .speakers-item {
   background: #FFFFFF;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
@@ -310,4 +346,70 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+.speakers-item__img {
+  max-width: 100%;
+}
+.speakers-item__name {
+  font-size: 4.5rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #333333;
+}
+.speakers-item__bottoms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.speakers-item__stars {
+  gap: 7px;
+}
+
+.help {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 211px;
+}
+.help__content {
+  max-width: 680px;
+}
+.help__title {
+  font-size: 9rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: #0E0E0F;
+  text-align: start;
+  margin: 30px 0 40px 0;
+}
+.help__list {
+  list-style: none;
+}
+.help__line {
+  font-size: 4.5rem;
+  line-height: 140%;
+  font-weight: 400;
+  color: #333333;
+  position: relative;
+  padding: 0px 0px 15px 30px;
+  padding-bottom: 15px;
+}
+.help__line::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(/img/Help/icon.svg) 0 0 no-repeat;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.help__line:last-child {
+  padding-bottom: 0;
+}
+.help__img {
+  max-width: 454px;
+}
+.help__img img {
+  width: 100%;
 }
